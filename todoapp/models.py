@@ -9,7 +9,7 @@ class TodoList(models.Model):
     datetime = models.DateTimeField() # Creation date tiome
   
     def __unicode__(self):
-'''
+    '''
     Returns title of the todo task
-'''
+    '''
         return self.title
