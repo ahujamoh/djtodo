@@ -1,9 +1,19 @@
-    <h1><ul>to-do list</ul></h1>  <hr />
-      
-    {% for x in items %}  
-    <p>
-        {{ x.title }} - {{ x.created|date:"D d M Y" }}
-    </p>  
-    <p>{{ x.description }}</p>  
-    <hr />  
+<h1>
+    to-do list
+</h1>
+<hr/>
+
+    {% for todo in todos %}  
+
+<p>
+    Title: {{ todo.title }}
+</p>
+<p>
+    Date: {{ todo.datetime }}
+</p>
+<p>
+    Description: {{ todo.description }}
+</p>  
+<hr/>  
+
     {% endfor %}  
