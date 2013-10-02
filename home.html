@@ -1,7 +1,11 @@
-<h1>
-    to-do list
-</h1>
-<hr/>
+<html>
+<head>
+    <title>To-do List</title> 
+</head>
+
+<body>
+
+<h2>To-do list</h2>
 
     {% for todo in todos %}  
 
@@ -14,6 +18,8 @@
 <p>
     Description: {{ todo.description }}
 </p>  
-<hr/>  
+<ul>  
 
-    {% endfor %}  
+    {% endfor %}
+</body>
+</html>
