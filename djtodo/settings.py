@@ -4,7 +4,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+     ('sudip', 'iamsudip@programmer.net'),
 )
 
 MANAGERS = ADMINS
@@ -14,8 +14,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3', # sqlite3 as databse engine.
         'NAME': 'data.db',                      # Path to database file.
         # The following settings are not used with sqlite3:
-        'USER': '',
-        'PASSWORD': '',
+        'USER': 'sudip',
+        'PASSWORD': '1234567890',
         'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }
