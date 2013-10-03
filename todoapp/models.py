@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib import admin
 
 class TodoList(models.Model):
     '''
@@ -23,3 +24,5 @@ class TodoList(models.Model):
             REturns todolist title
         '''
         return self.title
+
+admin.site.register(TodoList)
