@@ -15,16 +15,17 @@ Add tasks to to-do list:
 <ul>
 
     {% for todo in todos %}
-<p>
+<ul>
+<li>
     <b>Title:</b> {{ todo.title }}
-</p>
+</li>
 <p>
     <b>Date:</b> {{ todo.datetime }}
 </p>
 <p>
     <b>Description:</b> {{ todo.description }}
 </p>  
-<ul>  
+</ul>  
 
     {% endfor %}
 </body>
