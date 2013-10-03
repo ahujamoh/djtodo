@@ -6,17 +6,23 @@
 <body>
 
 <h2>To-do list</h2>
+<ul>
 
-    {% for todo in todos %}  
+Add tasks to to-do list:
+<form method="link" action="/admin/todoapp/todolist/add/">
+<input type="submit" value="Here">
+</form>
+<ul>
 
+    {% for todo in todos %}
 <p>
-    Title: {{ todo.title }}
+    <b>Title:</b> {{ todo.title }}
 </p>
 <p>
-    Date: {{ todo.datetime }}
+    <b>Date:</b> {{ todo.datetime }}
 </p>
 <p>
-    Description: {{ todo.description }}
+    <b>Description:</b> {{ todo.description }}
 </p>  
 <ul>  
 
