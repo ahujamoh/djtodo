@@ -23,8 +23,11 @@ Add tasks to to-do list:
     <b>Date:</b> {{ todo.datetime }}
 </p>
 <p>
-    <b>Description:</b> {{ todo.description }}
-</p>  
+    <b>Priority:</b> {{ todo.priority }}
+</p>
+<p>
+    <b>Present state:</b> {{ todo.state }}
+</p> 
 </ul>  
 
     {% endfor %}
