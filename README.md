@@ -37,7 +37,9 @@ Without closing the terminal open a web browser and go to this address::
 
 you will see nothing there, because you never added a to-do list.
 
-To add to-do list go to this address::
+To add tasks to list you can use the button.
+
+To view admin page go to this address::
 
     http://127.0.0.1:8000/admin
 
