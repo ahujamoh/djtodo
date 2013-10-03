@@ -35,4 +35,6 @@ for row in c1.execute('SELECT * FROM todoapp_TodoList'):
     """, (no, title, datetime, "", "")
     )
 
+conn2.commit()
+conn2.close()
 print "Migration completed successfully"
