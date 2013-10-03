@@ -25,4 +25,10 @@ class TodoList(models.Model):
         '''
         return self.title
 
+    class Meta:
+        '''
+            List will be ordered by dates
+        '''
+        ordering = ['datetime']
+
 admin.site.register(TodoList)
