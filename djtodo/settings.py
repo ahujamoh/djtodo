@@ -14,8 +14,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3', # sqlite3 as databse engine.
         'NAME': 'data.db',                      # Path to database file.
         # The following settings are not used with sqlite3:
-        'USER': 'sudip',
-        'PASSWORD': '1234567890',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }
