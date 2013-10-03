@@ -27,7 +27,15 @@ How to use
 
 cd into recently cloned 'djtodo' and do::
 
+    $ python manage.py syncdb
+
+on execution of above command a database file named data.db will be created at pwd.
+
+All data will be saved here.
+
     $ sudo python manage.py runserver
+
+(Why it is needed superuser i am not sure) trying to figure it out)
 
 The server will start running at localhost port 8000 (default).
 
