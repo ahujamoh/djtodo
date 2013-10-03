@@ -26,9 +26,9 @@ def stats(request):
         pendper = 0
     compper = 100 - pendper
     pcstats = {
-        "pending":pending,
-        "completed":completed,
-        "pendper":pendper,
-        "compper":compper
+        "pending": pending,
+        "completed": completed,
+        "pendper": "%0.2f" %(pendper),
+        "compper": "%0.2f" %(compper)
     }
     return render_to_response('stats.html', {'stats' : pcstats})
