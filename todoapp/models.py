@@ -29,6 +29,6 @@ class TodoList(models.Model):
         '''
             List will be ordered by dates
         '''
-        ordering = ['datetime']
+        ordering = ['-status', 'datetime']
 
 admin.site.register(TodoList)
