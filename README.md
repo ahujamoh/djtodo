@@ -29,7 +29,7 @@ cd into recently cloned 'djtodo' and do::
 
     $ python manage.py syncdb
 
-on execution of above command a database file named data.db will be created at pwd.
+on execution of above command a database file named data.db will be created at pwd. **remember the username/password you create here**
 
 All data will be saved here.
 
@@ -51,7 +51,7 @@ To view admin page go to this address::
 
     http://127.0.0.1:8000/admin
 
-you will see admin page(Do not worry, It will not ask you for username/password).
+you will see admin page(put username/password if needed).
 
 Simply add to do list using the form and use the code like above.
 
