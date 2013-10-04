@@ -47,6 +47,10 @@ you will see nothing there, because you never added a to-do list.
 
 To add tasks to list you can use the button.
 
+To search through the task list use the search button on home page or you can manually go to::
+
+    http://127.0.0.1:8000/search/
+
 To view statistics you can press the button available at root or manually you can visit::
 
     http://127.0.0.1:8000/stats/
