@@ -3,7 +3,7 @@ from django.contrib import admin
 
 class TodoList(models.Model):
     '''
-        Table in database as title, description and datetime for todo list
+        columns in database as title, datetime, priority, status for todo list
     '''
     priority_tuple = (
         ('Little', 'Little'),
@@ -21,13 +21,13 @@ class TodoList(models.Model):
   
     def __unicode__(self):
         '''
-            REturns todolist title
+            REturns todolist title as unicode
         '''
         return self.title
 
     class Meta:
         '''
-            List will be ordered by dates
+            List will be ordered by dates as default
         '''
         ordering = ['-status', 'datetime']
 
