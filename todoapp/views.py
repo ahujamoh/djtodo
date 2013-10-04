@@ -3,14 +3,26 @@ from django.shortcuts import render_to_response, render
 
 def home(request):
     '''
-        Returns all the to-do entries with all informaion to view at /
+        Handles the root view
+
+        :kwarg request: Django request object
+
+        Returns render_to_response object
+
+        Functionality: helps to view all the task list
     '''
     todos = TodoList.objects.all()
     return render_to_response('home.html', {'todos': todos})
 
 def stats(request):
     '''
-        Returns count how many tasks are pending, how many completed
+        Handles the root view
+
+        :kwarg request: Django request object
+
+        Returns render_to_response object
+        
+        Functionality: counts how many tasks are pending, how many completed
     '''
     todos = TodoList.objects.all()
     pending = 0
@@ -34,6 +46,17 @@ def stats(request):
     return render_to_response('stats.html', {'stats' : pcstats})
 
 def search(request):
+    '''
+        Handles the root view
+
+        :kwarg request: Django request object
+
+       Searches database with the search term provided.
+       searches the term through all the fields(i.e. title, status, datetime, priority
+
+       Returns render object
+       
+    '''
     try:
         search_term = request.GET['search']
         if not search_term in ["", " "]:
