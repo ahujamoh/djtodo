@@ -1,5 +1,5 @@
 from models import TodoList 
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, render
 
 def home(request):
     '''
@@ -32,3 +32,12 @@ def stats(request):
         "compper": "%0.2f" %(compper)
     }
     return render_to_response('stats.html', {'stats' : pcstats})
+
+def search(request):
+    try:
+        search_term = request.GET['search']
+        if not search_term in ["", " "]:
+            results = TodoList.objects.filter(title__contains=search_term)|TodoList.objects.filter(status__contains=search_term)|TodoList.objects.filter(priority__contains=search_term)|TodoList.objects.filter(datetime__contains=search_term)
+        return render(request, 'search.html', {'results':results})
+    except:
+        return render(request, 'search.html')
