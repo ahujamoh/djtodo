@@ -1,42 +1,46 @@
 <html>
-<head>
-    <title>To-do List</title> 
-</head>
+	<head>
+    	<title>
+			To-do List
+		</title> 
+	</head>
 
-<body>
-<h2>To-do list</h2>
-<ul>
+	<body>
+		<h2>
+			To-do list
+		</h2>
+		<ul>
 
-Add tasks to to-do list:
-<form method="link" action="/admin/todoapp/todolist/add/">
-<input type="submit" value="Here">
-</form>
-Search task list:
-<form method="link" action="/search/">
-<input type="submit" value="Search">
-</form>
-<ul>
+		Add tasks to to-do list:
+		<form method="link" action="/admin/todoapp/todolist/add/">
+		<input type="submit" value="Here">
+		</form>
+		Search task list:
+		<form method="link" action="/search/">
+		<input type="submit" value="Search">
+		</form>
+		<ul>
 
-    {% for todo in todos %}
-<ul>
-<li>
-    <b>Title:</b> {{ todo.title }}
-</li>
-<p>
-    <b>Date:</b> {{ todo.datetime }}
-</p>
-<p>
-    <b>Priority:</b> {{ todo.priority }}
-</p>
-<p>
-    <b>Present status:</b> {{ todo.status }}
-</p> 
-</ul>  
+    	{% for todo in todos %}
+		<ul>
+			<li>
+    			<b>Title:</b> {{ todo.title }}
+			</li>
+			<p>
+    			<b>Date:</b> {{ todo.datetime }}
+			</p>
+			<p>
+    			<b>Priority:</b> {{ todo.priority }}
+			</p>
+			<p>
+    			<b>Present status:</b> {{ todo.status }}
+			</p> 
+		</ul>  
 
-    {% endfor %}
+    	{% endfor %}
 
-<form method="link" action="/stats/">
-<input type="submit" value="Statistics">
-</form>
-</body>
+		<form method="link" action="/stats/">
+		<input type="submit" value="Statistics">
+		</form>
+	</body>
 </html>

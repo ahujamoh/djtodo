@@ -1,39 +1,40 @@
 <html>
-<head>
-    <title>Statistics for to-do list</title> 
-</head>
+	<head>
+    	<title>
+			Statistics for to-do list
+		</title> 
+	</head>
 
-<body>
+	<body>
+		<h2>
+			Statistics for to-do list
+		</h2>
+		<p>
+			<li>
+ 		   		<b>Task Pending: </b> {{ stats.pending }}
+				</li>
+		</p>
+		<p>
+			<li>
+  		  		<b>Task Completed: </b> {{ stats.completed }}
+			</li>
+		</p>
+		<p>
+			<li>
+  	  			<b>Pending: </b> {{ stats.pendper }} %
+			</li>
+		</p>
+		<p>
+			<li>
+    			<b>Completed: </b> {{ stats.compper }} %
+			</li> 
+		</p>
 
-<h2>Statistics for to-do list</h2>
-
-
-<p>
-<li>
-    <b>Task Pending: </b> {{ stats.pending }}
-</li>
-</p>
-<p>
-<li>
-    <b>Task Completed: </b> {{ stats.completed }}
-</li>
-</p>
-<p>
-<li>
-    <b>Pending: </b> {{ stats.pendper }} %
-</li>
-</p>
-<p>
-<li>
-    <b>Completed: </b> {{ stats.compper }} %
-</li> 
-</p>
-
-<form method="link" action="/admin/">
-<input type="submit" value="Admin Panel">
-</form>
-<form method="link" action="/">
-<input type="submit" value="Homepage">
-</form>
-</body>
+		<form method="link" action="/admin/">
+		<input type="submit" value="Admin Panel">
+		</form>
+		<form method="link" action="/">
+		<input type="submit" value="Homepage">
+		</form>
+	</body>
 </html>

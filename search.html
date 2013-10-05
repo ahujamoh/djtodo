@@ -1,37 +1,52 @@
 <html>
-<head>
-    <title>Search</title> 
-</head>
+	<head>
+    	<title>
+			Search
+		</title> 
+	</head>
 
-<body>
-<form action="/search/" method="get">
-Search Term: <input type="text" name="search">
-<input type="submit" value="Submit">
-{% if results %}
-<p><b>Results found:</b></p>
-{% for result in results %}
-<ul>
-<li>
-    <b>Title:</b> {{ result.title }}
-</li>
-<p>
-    <b>Date:</b> {{ result.datetime }}
-</p>
-<p>
-    <b>Priority:</b> {{ result.priority }}
-</p>
-<p>
-    <b>Present status:</b> {{ result.status }}
-</p> 
-</ul>  
-{% endfor %}
-{% else %}
-<p>Please enter search keyword based on:</p>
-<li>Task status</li>
-<li>Task title</li>
-<li>Task priority</li>
-<li>Due date</li>
-{% endif %}
-</form>
-</body>
+	<body>
+		<form action="/search/" method="get">
+		Search Term: <input type="text" name="search">
+		<input type="submit" value="Submit">
+		</form>
+		{% if results %}
+		<p>
+			<b>Results found:
+			</b>
+		</p>
+		{% for result in results %}
+		<ul>
+			<li>
+    			<b>Title:</b> {{ result.title }}
+			</li>
+			<p>
+    			<b>Date:</b> {{ result.datetime }}
+			</p>
+			<p>
+    			<b>Priority:</b> {{ result.priority }}
+			</p>
+			<p>
+    			<b>Present status:</b> {{ result.status }}
+			</p> 
+		</ul>  
+		{% endfor %}
+		{% else %}
+		<p>
+			Please enter search keyword based on:
+		</p>
+		<li>
+			Task status
+		</li>
+		<li>
+			Task title
+		</li>
+		<li>
+			Task priority
+		</li>
+		<li>
+			Due date
+		</li>
+		{% endif %}
+	</body>
 </html>
