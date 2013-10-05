@@ -1,6 +1,6 @@
 <html>
 	<head>
-    	<title>
+		<title>
 			Search
 		</title> 
 	</head>
@@ -12,22 +12,21 @@
 		</form>
 		{% if results %}
 		<p>
-			<b>Results found:
-			</b>
+			<b>Results found:</b>
 		</p>
 		{% for result in results %}
 		<ul>
 			<li>
-    			<b>Title:</b> {{ result.title }}
+				<b>Title:</b> {{ result.title }}
 			</li>
 			<p>
-    			<b>Date:</b> {{ result.datetime }}
+				<b>Date:</b> {{ result.datetime }}
 			</p>
 			<p>
-    			<b>Priority:</b> {{ result.priority }}
+				<b>Priority:</b> {{ result.priority }}
 			</p>
 			<p>
-    			<b>Present status:</b> {{ result.status }}
+				<b>Present status:</b> {{ result.status }}
 			</p> 
 		</ul>  
 		{% endfor %}
